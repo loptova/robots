@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Robot>
+  <Studio Version="1.0.2.0" />
+  <Schema>
+    <Base.Sequence type_guid="32c6fcaa-cbe4-4fab-afd9-8113b8a5190b" Name="" Description="" GUID="48bb8ab1-afc0-47fa-9952-725eb897d7a3" Next="" Previous="" Parent="" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+      <List>
+        <Standard.SetVariable type_guid="59c686d3-1c13-44f2-af6c-52714c5eaa68" Name="Присвоить значение переменной" Description="" GUID="b052832c-0c1b-464f-a1d9-a3751835da6e" Next="7a9c73d0-aa57-4bb9-bc3d-7278d882f614" Previous="" Parent="48bb8ab1-afc0-47fa-9952-725eb897d7a3" UI_identifier="Base|prisvoenie" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Value>a + 1</Value>
+            <ReturnValueVariable>6f9d0447-c2d9-4cf2-9e82-f42dc602b320</ReturnValueVariable>
+          </Properties>
+        </Standard.SetVariable>
+        <Standard.UserMessage type_guid="6bc2fa18-f753-458e-9153-9b0ec8ed8683" Name="Сообщение в лог" Description="" GUID="7a9c73d0-aa57-4bb9-bc3d-7278d882f614" Next="12584dc2-0c80-4a49-b847-dd5bbe3cd2fa" Previous="b052832c-0c1b-464f-a1d9-a3751835da6e" Parent="48bb8ab1-afc0-47fa-9952-725eb897d7a3" UI_identifier="Base|text" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <userMessadge>Присвоение значения. Результат: {a}</userMessadge>
+            <EnableLog>true</EnableLog>
+          </Properties>
+        </Standard.UserMessage>
+        <Standard.Sleep type_guid="f12621b4-6d80-4a15-b144-65bc6e574ff4" Name="Ожидать" Description="" GUID="12584dc2-0c80-4a49-b847-dd5bbe3cd2fa" Next="247d2b8f-30cb-40e2-b5a7-b3ac118beadc" Previous="7a9c73d0-aa57-4bb9-bc3d-7278d882f614" Parent="48bb8ab1-afc0-47fa-9952-725eb897d7a3" UI_identifier="Base|wait" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <TimeInt>60000</TimeInt>
+          </Properties>
+        </Standard.Sleep>
+        <Standard.SetVariable type_guid="59c686d3-1c13-44f2-af6c-52714c5eaa68" Name="Присвоить значение переменной" Description="" GUID="247d2b8f-30cb-40e2-b5a7-b3ac118beadc" Next="56f21e26-7582-4ac1-8ca3-cf5400883e94" Previous="12584dc2-0c80-4a49-b847-dd5bbe3cd2fa" Parent="48bb8ab1-afc0-47fa-9952-725eb897d7a3" UI_identifier="Base|prisvoenie" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <ReturnValueVariable>b8f6a136-c2a9-4187-bef6-d4df46968323</ReturnValueVariable>
+            <Value>a + b</Value>
+          </Properties>
+        </Standard.SetVariable>
+        <Standard.UserMessage type_guid="6bc2fa18-f753-458e-9153-9b0ec8ed8683" Name="Сообщение в лог" Description="" GUID="56f21e26-7582-4ac1-8ca3-cf5400883e94" Next="" Previous="247d2b8f-30cb-40e2-b5a7-b3ac118beadc" Parent="48bb8ab1-afc0-47fa-9952-725eb897d7a3" UI_identifier="Base|text" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <userMessadge>Сложение. Результат: {b}</userMessadge>
+            <EnableLog>true</EnableLog>
+          </Properties>
+        </Standard.UserMessage>
+      </List>
+    </Base.Sequence>
+  </Schema>
+  <Variables>
+    <List>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="a" GUID="6f9d0447-c2d9-4cf2-9e82-f42dc602b320" IsReturn="false">
+        <Value>123</Value>
+      </Variable.Decimal>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="b" GUID="b8f6a136-c2a9-4187-bef6-d4df46968323" IsReturn="false">
+        <Value>34</Value>
+      </Variable.Decimal>
+    </List>
+  </Variables>
+  <Contexts>
+    <List />
+  </Contexts>
+</Robot>
